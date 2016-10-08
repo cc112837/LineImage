@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxEms="1"
+            android:minLines="2"
+            android:text="数量"
+            android:textColor="@android:color/black"
+            android:textSize="13sp"
+            android:textStyle="" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="400dp" >
+
+            <view
+                android:id="@+id/bar_view"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                class="com.cc.lineimage.view.BarView" />
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6月份销量走势"
+        android:textColor="@android:color/black"
+        android:textSize="13sp"
+        android:textStyle="" />
+
+</LinearLayout>
